@@ -85,7 +85,9 @@ class syntax_plugin_socialite_button extends DokuWiki_Syntax_Plugin {
         $valid_networks = array('twitter', 'facebook', 'googleplus',
                                 'linkedin', 'pinterest', 'tumblr',
                                 'reddit', 'taringa', 'stumbleupon',
-                                'telegram', 'hackernews', 'xing', 'vk', 'email');
+				'telegram', 'hackernews', 'xing', 'vk',
+				     //'mastodon', 'bluesky', 'email');
+			     	'bluesky', 'email');
 
         if (in_array($data['display'], $valid_displays)) {
             $display = $data['display'];
@@ -174,6 +176,14 @@ class syntax_plugin_socialite_button extends DokuWiki_Syntax_Plugin {
             case 'vk':
                 $name = 'Vk';
                 $href = 'https://vk.com/share.php?url='. $url .'&title=' . $title . '&description=' . $abstract . '&noparse=true';
+		break;
+            //case 'mastodon':
+                //$name = 'Mastodon';
+		//$href = 
+		//break;
+            case 'bluesky':
+                $name = 'Bluesky';
+                $href = 'https://bsky.app/intent/compose?text='. $title . $url;
                 break;
             case 'email':
                 $name = 'Email';

@@ -268,6 +268,43 @@
     background-color: #4c75a3;
 }
 
+/* Mastodon */
+
+/*.socialite li.name .mastodon,*/
+/*.socialite li.icon .mastodon,*/
+/*.socialite li.color .mastodon {*/
+    /*border-color: #ff6600;*/
+/*}*/
+
+/*.socialite li.name .mastodon,*/
+/*.socialite li.icon .mastodon {*/
+    /*background-image: url("images/mastodon.svg");*/
+/*}*/
+
+/*.socialite li.color .mastodon {*/
+    /*background-color: #ff6600;*/
+/*}*/
+
+/* bluesky */
+
+.socialite li.name .bluesky,
+.socialite li.icon .bluesky,
+.socialite li.color .bluesky {
+    border-color: #ff6600;
+}
+
+.socialite li.name .bluesky,
+.socialite li.icon .bluesky {
+    background-image: url("images/bluesky.svg");
+}
+
+.socialite li.color .bluesky {
+    background-color: #ff6600;
+}
+
+
+
+
 /* Email */
 
 .socialite li.name .email,
